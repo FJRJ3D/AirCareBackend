@@ -17,8 +17,8 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "cityname")
-    private String cityname;
+    @Column(name = "cityName")
+    private String cityName;
 
     @Column(name = "details")
     private String details;

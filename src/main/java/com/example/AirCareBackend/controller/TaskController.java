@@ -14,13 +14,20 @@ public class TaskController {
     @Autowired
     TaskService taskService;
 
-    @GetMapping(path = "/motos")
+    @GetMapping(path = "/Air")
     public ArrayList<Task> getAllTasks(){
         return taskService.getAllTasks();
     }
 
-    @PostMapping(path = "/motos")
+    @PostMapping(path = "/Air")
     public Task addTask(@RequestBody Task newTask){
         return taskService.addTask(newTask);
     }
+
+    @DeleteMapping(path = "/Air/{id}")
+    public String deleteTask(@PathVariable Integer id) {
+        return taskService.deleteTask(id);
+    }
+
+
 }

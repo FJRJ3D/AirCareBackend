@@ -19,4 +19,11 @@ public class TaskService {
     public Task addTask(Task newTask){
         return iTaskRepository.save(newTask);
     }
+
+    public String deleteTask(Integer id) {
+        iTaskRepository.deleteById(id);
+        return null;
+    }
+
+
 }
