@@ -14,12 +14,12 @@ public class TaskController {
     @Autowired
     TaskService taskService;
 
-    @GetMapping(path = "/tasks")
+    @GetMapping(path = "/motos")
     public ArrayList<Task> getAllTasks(){
         return taskService.getAllTasks();
     }
 
-    @PostMapping(path = "/tasks")
+    @PostMapping(path = "/motos")
     public Task addTask(@RequestBody Task newTask){
         return taskService.addTask(newTask);
     }
