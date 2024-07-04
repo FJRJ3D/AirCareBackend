@@ -25,5 +25,7 @@ public class TaskService {
         return null;
     }
 
-
+    public Task updateTask(Task updateTask) {
+        return iTaskRepository.save(updateTask);
+    }
 }

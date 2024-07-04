@@ -29,5 +29,8 @@ public class TaskController {
         return taskService.deleteTask(id);
     }
 
-
+    @PutMapping(path = "/Air")
+    public Task updateTask(@RequestBody Task updateTask) {
+        return taskService.updateTask(updateTask);
+    }
 }
